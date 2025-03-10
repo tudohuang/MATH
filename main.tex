@@ -1,0 +1,130 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{enumitem} % 支援題庫的 enumerate
+\usepackage{tikz} % 繪圖
+\usepackage{pgfplots} % 繪圖
+\usepackage{physics} % 物理符號
+\usepackage{listings} % 程式碼
+\usepackage{circuitikz}
+
+% 修正 headheight 警告
+\setlength{\headheight}{15pt}
+\addtolength{\topmargin}{-3pt}
+
+% 設定標楷體
+\setCJKmainfont[
+    AutoFakeBold = {2.0}
+]{AR PL UKai TW}
+
+% 兼容不同系統
+\IfFileExists{C:/Windows/Fonts/kaiu.ttf}{
+    \setCJKmainfont{DFKai-SB}
+}{
+    \IfFileExists{/System/Library/Fonts/Supplemental/BiauKai.ttf}{
+        \setCJKmainfont{BiauKai}
+    }{
+        \setCJKmainfont{AR PL UKai TW}
+    }
+}
+
+% 標題格式
+\titleformat{\chapter}{\Huge\bfseries}{\thechapter}{1em}{}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+
+% 頁眉
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{數A滿級分講義}
+\fancyhead[R]{\thepage}
+
+\title{數A滿級分講義}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter*{前言}
+\addcontentsline{toc}{chapter}{前言}
+
+\section*{講義目標}
+本講義旨在幫助考生全面掌握台灣大學入學學力測驗（學測）數學A的考試範圍，並以追求滿級分為目標。學測數學A的特點在於「觀念熟悉但題目新穎」，因此我們不僅深入講解每個單元的基礎知識，還融入大學層次的解題技巧，讓你在考場上能快速應對各種變化。無論你是自然組的考生還是自學者，這份講義都將成為你通往高分的利器。
+
+\section*{講義特色}
+\begin{itemize}
+    \item \textbf{觀念深度}：從108課綱的高中數學A基礎出發，延伸至大學入門技巧（如線性代數、微積分初步），讓你理解背後的原理並靈活應用。
+    \item \textbf{題型豐富}：每個單元提供約40道題目，涵蓋計算題、應用題與觀念題，模擬學測命題風格，並加入自創題目與網路改編題，確保你面對陌生題型時也能從容應對。
+    \item \textbf{解題加速}：介紹大學層次的快捷方法（如向量法、矩陣運算、生成函數），讓你在限定時間內更有效率地解題。
+    \item \textbf{圖形支援}：使用Python生成動態圖形（如函數曲線、空間向量），並搭配LaTeX繪製靜態圖形（如三角形、向量分解），幫助你直觀理解抽象概念。
+    \item \textbf{實用工具}：附錄提供公式總表與Python程式碼範例，讓你隨時查閱與實作。
+\end{itemize}
+
+\section*{使用說明}
+\begin{enumerate}
+    \item \textbf{循序學習}：建議按照單元順序閱讀，先掌握觀念與公式，再透過例題理解應用方式。
+    \item \textbf{反覆練習}：每個單元的題庫是核心，建議至少完成一半題目，並檢討錯誤。題目來源包括學測歷年試題、補習班模擬題與自創題，涵蓋各種難度。
+    \item \textbf{活用技巧}：特別留意「大學技巧」部分，這些方法能在關鍵時刻節省時間或提供新思路。
+    \item \textbf{圖形實作}：若有興趣，可運行附錄中的Python程式碼，自行調整參數生成圖形，加深理解。
+\end{enumerate}
+
+希望這份講義能陪伴你在學測數學A的準備路上，穩扎穩打，拿下滿級分！
+
+% 匯入各章節檔案
+\chapter{數與式}
+\input{src/chapter1.tex}
+
+\chapter{直線與圓}
+\input{src/chapter2.tex}
+
+\chapter{多項式}
+\input{src/chapter3.tex}
+
+\chapter{數列與級數}
+\input{src/chapter4.tex}
+
+\chapter{指數與對數}
+\input{src/chapter5.tex}
+
+\chapter{數據分析}
+\input{src/chapter6.tex}
+
+\chapter{排列組合}
+\input{src/chapter6.tex}
+
+\chapter{機率}
+\input{src/chapter7.tex}
+
+\chapter{三角}
+\input{src/chapter8.tex}
+
+\chapter{三角函數}
+\input{src/chapter9.tex}
+
+
+\chapter{平面向量}
+\input{src/chapter11.tex}
+
+\chapter{空間向量}
+\input{src/chapter12.tex}
+
+\chapter{空間中平面與直線方程式}
+\input{src/chapter13.tex}
+
+\chapter{矩陣}
+\input{src/chapter14.tex}
+
+\chapter{題庫解答}
+\input{src/solutions.tex}
+
+\end{document}

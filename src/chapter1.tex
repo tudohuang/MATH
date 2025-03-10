@@ -1,0 +1,199 @@
+% chapter1.tex
+
+\section{觀念與公式}
+
+\subsection{數系}
+數系是數學的基石，從最簡單的計數開始，逐步擴展到抽象的數學對象。以下逐一介紹：
+\begin{itemize}
+    \item \textbf{自然數} ($\mathbb{N}$)：$1, 2, 3, \dots$，用於計數，最基本的數集合。
+    \item \textbf{整數} ($\mathbb{Z}$)：$\dots, -2, -1, 0, 1, 2, \dots$，加入負數解決減法問題，如$3 - 5 = -2$。
+    \item \textbf{有理數} ($\mathbb{Q}$)：形如$\frac{p}{q}$（$p, q \in \mathbb{Z}, q \neq 0$），解決除法需求，例如$\frac{1}{2}$。
+    \item \textbf{無理數}：無法寫成分數的實數，如$\sqrt{2}$（證明：假設$\sqrt{2} = \frac{p}{q}$，則$2q^2 = p^2$，$p$必為偶數，矛盾），還有$\pi, e$。
+    \item \textbf{實數} ($\mathbb{R}$)：包含有理數與無理數，形成連續的數線，滿足完備性（每個有上界的非空集合有最小上界）。
+    \item \textbf{複數} ($\mathbb{C}$)：形如$a + bi$（$a, b \in \mathbb{R}, i = \sqrt{-1}$），解決$x^2 + 1 = 0$等方程。
+\end{itemize}
+\textbf{應用}：實數用於測量（如長度），複數用於電路分析與振動模型。\\
+\textbf{大學技巧}：複數的極形式$r(\cos\theta + i\sin\theta)$，其中$r = \sqrt{a^2 + b^2}$，$\theta = \tan^{-1}\left(\frac{b}{a}\right)$。例如，$3 + 4i$的模為$5$，幅角約$53.13^\circ$，乘除時模相乘、幅角相加減，比代數形式更快。
+
+\subsection{絕對值運算}
+絕對值表示數到原點的距離，定義為：
+\[
+|x| =
+\begin{cases} 
+x, & \text{若 } x \geq 0, \\
+-x, & \text{若 } x < 0.
+\end{cases}
+\]
+例如，$|3| = 3$，$|-3| = 3$。\\
+\textbf{性質}：
+\begin{enumerate}
+    \item $|x| \geq 0$：距離非負。
+    \item $|-x| = |x|$：對稱性。
+    \item $|x \cdot y| = |x| \cdot |y|$：乘法分配。
+    \item 三角不等式：$|x + y| \leq |x| + |y|$，證明：考慮平方$(x + y)^2 \leq (|x| + |y|)^2$。
+\end{enumerate}
+\textbf{應用}：測量距離（如$|x - a|$是$x$到$a$的距離），解決含絕對值的方程。\\
+\textbf{大學技巧}：解$|x - a| < b$時，直接轉為$a - b < x < a + b$。例如，$|x - 2| < 3$即$-1 < x < 5$，幾何上是以$2$為中心，半徑$3$的區間。
+
+\subsection{算術不等式}
+不等式是優化與比較的工具，常見如下：
+\begin{itemize}
+    \item \textbf{AM-GM不等式}：對於非負數$a, b$，$\frac{a + b}{2} \geq \sqrt{ab}$。證明：
+    \begin{itemize}
+        \item \textbf{代數法}：$(a - b)^2 \geq 0$，展開得$a^2 - 2ab + b^2 \geq 0$，整理為$(a + b)^2 \geq 4ab$，開根號即得。等號當$a = b$。
+        \item \textbf{拉格朗日乘子法}：求$ab$最大值，受限於$a + b = k$。定義函數$f(a, b) = ab + \lambda (a + b - k)$，求偏導：
+        \[
+        \frac{\partial f}{\partial a} = b + \lambda = 0, \quad \frac{\partial f}{\partial b} = a + \lambda = 0, \quad a + b = k
+        \]
+        得$a = b$，代入$a + b = k$，$a = b = \frac{k}{2}$，$ab = \left(\frac{k}{2}\right)^2$，驗證為最大值。
+    \end{itemize}
+    \item \textbf{柯西-施瓦茨不等式}：$(a_1b_1 + a_2b_2)^2 \leq (a_1^2 + a_2^2)(b_1^2 + b_2^2)$，幾何上是向量內積與模的關係。
+\end{itemize}
+\textbf{應用}：求極值，如$a + b = 10$時，$ab$最大值為25。\\
+\textbf{大學技巧}：用HM（調和平均）與GM、AM串聯：$\frac{2}{\frac{1}{a} + \frac{1}{b}} \leq \sqrt{ab} \leq \frac{a + b}{2}$，解決複雜優化問題。拉格朗日法適用於多變量受限極值。
+
+\subsection{根號運算}
+根號是平方根的符號，$\sqrt{x}$表示滿足$y^2 = x$且$y \geq 0$的數。\\
+\textbf{基本運算}：
+\begin{itemize}
+    \item $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$（$a, b \geq 0$），如$\sqrt{12} = \sqrt{4 \cdot 3} = 2\sqrt{3}$。
+    \item $\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$（$a \geq 0, b > 0$），如$\sqrt{\frac{9}{4}} = \frac{3}{2}$。
+    \item 化簡：提取完全平方數，如$\sqrt{50} = \sqrt{25 \cdot 2} = 5\sqrt{2}$。
+\end{itemize}
+\textbf{複數根號}：對於$a + bi$，求$\sqrt{a + bi}$，設結果為$x + yi$：
+\[
+(x + yi)^2 = a + bi \implies x^2 - y^2 + 2xyi = a + bi
+\]
+比較實虛部：
+\[
+x^2 - y^2 = a, \quad 2xy = b, \quad |x + yi| = \sqrt{a^2 + b^2}
+\]
+例如，$\sqrt{3 + 4i}$，模為$\sqrt{25} = 5$，解得$x = 2, y = 1$（正根）。\\
+\textbf{應用}：化簡表達式，解決二次方程。\\
+\textbf{大學技巧}：複數根號用極形式更快，$\sqrt{re^{i\theta}} = \sqrt{r}e^{i\frac{\theta}{2}}$。
+
+\section{例題解析}
+
+\subsection{例題1：複數運算（計算題）}
+計算$(3 + 4i)(2 - i)$。\\
+\textbf{解}：展開：
+\[
+(3 + 4i)(2 - i) = 6 - 3i + 8i - 4i^2 = 6 + 5i + 4 = 10 + 5i
+\]
+\textbf{大學技巧}：極形式下，$3 + 4i$模為$5$，$2 - i$模為$\sqrt{5}$，幅角相加後轉回，但此題代數法更直接。
+
+\subsection{例題2：絕對值不等式（應用題）}
+解$|2x - 3| < 5$。\\
+\textbf{解}：去絕對值：
+\[
+-5 < 2x - 3 < 5 \implies -2 < 2x < 8 \implies -1 < x < 4
+\]
+解為$x \in (-1, 4)$。\\
+\textbf{大學技巧}：幾何法，$2x - 3$到0的距離小於5，$x$到$\frac{3}{2}$的距離小於$\frac{5}{2}$。
+
+\subsection{例題3：AM-GM應用（觀念題）}
+若$a + b = 10$，求$ab$最大值。\\
+\textbf{解}：由AM-GM：
+\[
+\frac{a + b}{2} \geq \sqrt{ab} \implies 5 \geq \sqrt{ab} \implies ab \leq 25
+\]
+當$a = b = 5$時，$ab = 25$，故最大值為25。\\
+\textbf{大學技巧}：拉格朗日法驗證，$f(a) = a(10 - a)$，導數為0時$a = 5$。
+
+\subsection{例題4：根號化簡（計算題）}
+化簡$\sqrt{48} + \sqrt{75}$。\\
+\textbf{解}：
+\[
+\sqrt{48} = \sqrt{16 \cdot 3} = 4\sqrt{3}, \quad \sqrt{75} = \sqrt{25 \cdot 3} = 5\sqrt{3}
+\]
+\[
+\sqrt{48} + \sqrt{75} = 4\sqrt{3} + 5\sqrt{3} = 9\sqrt{3}
+\]
+\textbf{大學技巧}：檢查是否有進一步因式分解，此題已最簡。
+
+\section{圖形展示}
+複數$3 + 4i$在複數平面：
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        xlabel=實部,
+        ylabel=虛部,
+        xmin=-1, xmax=5,
+        ymin=-1, ymax=5,
+        grid=both,
+        width=6cm, height=6cm
+    ]
+    \addplot[mark=*,red] coordinates {(3,4)} node[above right] {$3 + 4i$};
+    \addplot[dashed] coordinates {(0,0) (3,4)};
+    \end{axis}
+\end{tikzpicture}
+
+\section{題庫}
+\begin{enumerate}[label=\arabic*.]
+    % 計算題 (10)
+    \item 計算$(2 + 3i) + (4 - 5i)$。
+    \item 求$|5 - 2i|$。
+    \item 解$|x - 2| = 3$。
+    \item 計算$\frac{1 + i}{1 - i}$。
+    \item 求$(1 + i)^3$。
+    \item 解$|2x + 1| = 5$。
+    \item 計算$|-3 + 4i|^2$。
+    \item 化簡$\sqrt{18} + \sqrt{50}$。
+    \item 解$|x + 3| = |x - 1|$。
+    \item 計算$\sqrt{5 + 12i}$的模。
+    % 應用題 (10)
+    \item 若$|x - 5| < 2$，求$x$範圍。
+    \item 若$a + b = 12$，求$ab$最大值。
+    \item 一點$x$到起點距離為$|x|$，到終點10的距離為何？
+    \item 若$a, b > 0$，$a + b = 8$，求$\frac{1}{a} + \frac{1}{b}$最小值。
+    \item 價格$x$滿足$|x - 100| \leq 10$，求範圍。
+    \item 若$x^2 + y^2 = 2$，求$|x| + |y|$最大值。
+    \item 圓心$(3, 0)$，半徑2，點$(x, 0)$在圓內，求$x$範圍。
+    \item 若$a + b + c = 15$，求$abc$最大值。
+    \item 若$|x - 3| < |x + 2|$，求$x$範圍。
+    \item 若$a^2 + b^2 = 4$，求$a + b$最大值。
+    % 觀念題 (10)
+    \item 證明$|x + y| \leq |x| + |y|$。
+    \item 若$|x| = 0$，$x$為何？
+    \item AM-GM等號條件是什麼？
+    \item 複數$z$與$\overline{z}$的模相等嗎？
+    \item 解釋$|x - a| < b$的幾何意義。
+    \item 證明$|x - y| \geq ||x| - |y||$。
+    \item 若$a, b > 0$，比較$\frac{a + b}{2}$與$\sqrt{ab}$。
+    \item $z$與$-z$的模是否相等？
+    \item 若$|x| = |y|$，$x = y$嗎？
+    \item 證明$\sqrt{ab} \leq \frac{a + b}{2}$（$a, b \geq 0$）。
+    % 進階題 (10)
+    \item 解$|x - 1| + |x + 1| = 4$。
+    \item 若$|z - 1| = 2$，描述$z$軌跡。
+    \item 證明$\frac{a + b + c}{3} \geq \sqrt[3]{abc}$。
+    \item 解$|x - 2| + |x - 3| = 1$。
+    \item 求$\max\{|x| + |y| \mid x^2 + y^2 = 1\}$。
+    \item 若$|z| = 1$，求$z + \frac{1}{z}$實部。
+    \item 解$|x - 1| < |x + 2|$。
+    \item 若$a + b = 10$，求$a^2 + b^2$最小值。
+    \item 化簡$\sqrt{12} - \sqrt{27} + \sqrt{75}$。
+    \item 若$|z - i| = |z + i|$，求$z$性質。
+    % 挑戰題 (20)
+    \item 解$|x - 1| + |x - 2| + |x - 3| = 5$。
+    \item 若$a + b = 6$，求$(a - 3)^2 + (b - 3)^2$最小值。
+    \item 證明$\frac{a}{b} + \frac{b}{a} \geq 2$，$a, b > 0$。
+    \item 求所有$z$滿足$|z - 1| = |z - i|$。
+    \item 若$x + y + z = 3$，求$x^2 + y^2 + z^2$最小值。
+    \item 解$||x - 1| - 2| = 3$。
+    \item 若$|z - 2| = 1$且$|z - i| = 2$，求$z$。
+    \item 證明$a^2 + b^2 \geq 4ab$，並找出等號條件。
+    \item 解$|x - 1| + |x + 1| = |x - 2| + |x + 2|$。
+    \item 若$a, b, c > 0$，$a + b + c = 3$，求$\frac{1}{a} + \frac{1}{b} + \frac{1}{c}$最小值。
+    \item 求滿足$|x - 1| + |x - 2| = 1$的$x$個數。
+    \item 若$x + y = xy$，求$x^2 + y^2$最小值。
+    \item 證明$\frac{a + b}{2} \geq \sqrt{ab} \geq \frac{2}{\frac{1}{a} + \frac{1}{b}}$。
+    \item 解$|x| + |x - 2| + |x - 4| = 6$。
+    \item 若$|z - 1| + |z + 1| = 4$，求$z$軌跡。
+    \item 求$\max\{x + y \mid x^2 + y^2 = 1\}$。
+    \item 若$a + b + c = 9$，求$a^2 + b^2 + c^2$最小值。
+    \item 解$|x - 1| = 2|x + 1|$。
+    \item 若$|z| = 2$，求$|z - 1| + |z + 1|$最大值。
+    \item 計算$\sqrt{8 + 6i}$。
+\end{enumerate}
+
