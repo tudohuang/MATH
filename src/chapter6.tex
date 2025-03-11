@@ -1,0 +1,146 @@
+
+\section{觀念與公式}
+
+\subsection{基本概念}
+排列與組合處理選擇與排列問題。\\
+\textbf{定義}：
+\begin{itemize}
+    \item 排列：$P(n, k) = \frac{n!}{(n-k)!}$，從n個取k個有序排列。
+    \item 組合：$\binom{n}{k} = \frac{n!}{k!(n-k)!}$，從n個取k個無序組合。
+    \item 階乘：$n! = n \cdot (n-1) \cdots 1$，$0! = 1$。
+\end{itemize}
+\textbf{應用}：計數問題。\\
+\textbf{大學技巧}：用生成函數求解。
+
+\subsection{排列的應用}
+\textbf{公式}：
+\begin{itemize}
+    \item 全排列：$n!$。
+    \item 環狀排列：$(n-1)!$。
+    \item 有重複排列：$\frac{n!}{n_1! n_2! \cdots n_k!}$。
+    \item \textbf{Hn取k}：從n個不同物取k個（可重複），$n^k$。
+\end{itemize}
+\textbf{應用}：排隊、密碼。\\
+\textbf{大學技巧}：容斥原理處理限制。
+
+\subsection{組合的應用}
+\textbf{公式}：
+\begin{itemize}
+    \item 基本組合：$\binom{n}{k}$。
+    \item 二項式定理：$(a + b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k$。
+    \item 性質：$\binom{n}{k} = \binom{n}{n-k}$，帕斯卡公式$\binom{n}{k} + \binom{n}{k-1} = \binom{n+1}{k}$。
+\end{itemize}
+\textbf{應用}：選物、分組。\\
+\textbf{大學技巧}：組合恆等式。
+
+\subsection{卡特蘭數}
+定義：$C_n = \frac{1}{n+1} \binom{2n}{n}$。\\
+\textbf{應用}：
+\begin{itemize}
+    \item 括號配對：$C_3 = 5$。
+    \item 不越界路徑：從$(0,0)$到$(n,n)$。
+\end{itemize}
+\textbf{值}：$C_0 = 1, C_1 = 1, C_2 = 2, C_3 = 5, C_4 = 14$。\\
+\textbf{大學技巧}：遞推$C_n = \sum_{i=0}^{n-1} C_i C_{n-1-i}$。
+
+\section{例題解析}
+
+\subsection{例題1：條件排列}
+5人排隊，A, B相鄰，求方法數。\\
+\textbf{解}：視A, B為一組，則4個單位（AB, 3人），全排列$4! = 24$，AB內部2種排法，總數$24 \cdot 2 = 48$。\\
+\textbf{大學技巧}：容斥法驗證。
+
+\subsection{例題2：分組應用}
+從6人選3人分給A組，餘下給B組，求方法數。\\
+\textbf{解}：選3人給A組，$\binom{6}{3} = 20$，餘下自動分B組，總數$20$。\\
+\textbf{大學技巧}：考慮組內排列。
+
+\subsection{例題3：卡特蘭數應用}
+求4個節點的二叉樹數量。\\
+\textbf{解}：二叉樹數為$C_4 = \frac{1}{5} \binom{8}{4} = \frac{70}{5} = 14$。\\
+\textbf{大學技巧}：用路徑計數。
+
+\subsection{例題4：重複排列應用}
+從3種顏色選4個塗4格（可重複），求方法數。\\
+\textbf{解}：$H(3, 4) = 3^4 = 81$。\\
+\textbf{大學技巧}：生成函數$(x_1 + x_2 + x_3)^4$。
+
+\subsection{例題5：二項式應用}
+求$(3x - 2)^5$的$x^3$項係數。\\
+\textbf{解}：$(3x)^{5-k} (-2)^k$，$5-k=3$，$k=2$：
+\[
+\binom{5}{2} \cdot 3^3 \cdot (-2)^2 = 10 \cdot 27 \cdot 4 = 1080
+\]
+\textbf{大學技巧}：用係數提取。
+
+
+
+\section{題庫}
+\begin{enumerate}[label=\arabic*.]
+    % 計算題 (10)
+    \item 求$P(5, 3)$。
+    \item 求$\binom{6}{2}$。
+    \item 求$4!$。
+    \item 用A, A, B排3位序列，求方法數。
+    \item 求$(x + 2)^4$的$x^2$項係數。
+    \item 求$P(7, 2)$。
+    \item 求$\binom{8}{3}$。
+    \item 用1, 1, 2排3位序列，求方法數。
+    \item 從4人排成一圈，求方法數。
+    \item 求$\binom{5}{4}$。
+    % 應用題 (20)
+    \item 5人排隊，A, B相鄰，求方法數。
+    \item 從6人選3人組成委員會，A必選，求方法數。
+    \item 4人圍圓桌，A, B不相鄰，求方法數。
+    \item 從8本書選4本分給2人，每人2本，求方法數。
+    \item 用0, 1組成5位數（可重複），至少1個0，求方法數。
+    \item 6個不同球分3堆（可空），求方法數。
+    \item 從5男3女選4人，至少1女，求方法數。
+    \item 求$(2x - 1)^6$的$x^4$項係數。
+    \item 5人排隊，A在B前，求方法數。
+    \item 從7個數字選3個，至少1奇數，求方法數。
+    \item 6人圍圓桌，A, B, C順時針連續，求方法數。
+    \item 用A, B, C排4位序列，至少2個A，求方法數。
+    \item 從10人選5人，至少2人為特定組（4人），求方法數。
+    \item 5個不同物分2堆（不可空），求方法數。
+    \item 從4種顏色選3格塗色（可重複），求方法數。
+    \item 7人排隊，A, B相鄰且C在D前，求方法數。
+    \item 求$C_4$（卡特蘭數）。
+    \item 從6個數字選3個排成3位數，至少1個5，求方法數。
+    \item 8人選4人分2組，每組2人，求方法數。
+    \item 從5人選3人排隊，A, B不相鄰，求方法數。
+    % 觀念題 (10)
+    \item 證$\binom{n}{k} = \binom{n}{n-k}$。
+    \item 說明環狀排列的公式推導。
+    \item 證帕斯卡恆等式。
+    \item 若有重複物，排列公式為何？
+    \item 說明二項式定理如何求係數。
+    \item 卡特蘭數如何應用於路徑計數？
+    \item 若從n個取k個可重複，方法數為何？
+    \item 證$P(n, k) = n \cdot (n-1) \cdots (n-k+1)$。
+    \item 說明組合與排列的區別。
+    \item 二項式展開的總係數和為何？
+    % 進階題 (10)
+    \item 從6人選3人排隊，A必須在首位，求方法數。
+    \item 求$(3x + 2)^5$的$x^3$項係數。
+    \item 用A, A, B, C, D排5位序列，求方法數。
+    \item 求$C_5$（卡特蘭數）。
+    \item 從8人選4人，A, B必選，求方法數。
+    \item 若$(x - 3)^7$的$x^5$項為$kx^5$，求$k$。
+    \item 6人排隊，A, B, C中至少2人相鄰，求方法數。
+    \item 從5種數字選4個（可重複），至少1個1，求方法數。
+    \item 7人圍圓桌，A, B相鄰且C不在D旁，求方法數。
+    \item 從9人選5人，至少3人為特定組（4人），求方法數。
+    % 挑戰題 (10)
+    \item 6人排隊，A, B相鄰且C, D不相鄰，求方法數。
+    \item 求$(2x - y)^6$的$x^4 y^2$項係數。
+    \item 5個不同球分3堆，至少1堆空，求方法數。
+    \item 用A, A, A, B, B, C排6位序列，求方法數。
+    \item 從7男3女選5人，至少2男2女，求方法數。
+    \item 8人圍圓桌，A, B, C順時針連續且D不在E旁，求方法數。
+    \item 若$(x + 2y)^8$的$x^4 y^4$項為$kx^4 y^4$，求$k$。
+    \item 從6個數字選3個，至少1個5且1個7，求方法數。
+    \item 5人排隊，A在B前且C在D前，求方法數。
+    \item 從10本書選5本分3人，每人至少1本，求方法數。
+\end{enumerate}
+

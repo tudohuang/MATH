@@ -1,0 +1,158 @@
+\section{觀念與公式}
+
+\subsection{基本三角比}
+直角三角形的邊角關係。\\
+\textbf{定義}：
+\begin{itemize}
+    \item $\sin \theta = \frac{\text{對邊}}{\text{斜邊}}$。
+    \item $\cos \theta = \frac{\text{鄰邊}}{\text{斜邊}}$。
+    \item $\tan \theta = \frac{\text{對邊}}{\text{鄰邊}}$。
+\end{itemize}
+\textbf{特殊角度}：
+\begin{itemize}
+    \item $30^\circ$: $\sin 30^\circ = \frac{1}{2}$, $\cos 30^\circ = \frac{\sqrt{3}}{2}$.
+    \item $45^\circ$: $\sin 45^\circ = \frac{\sqrt{2}}{2}$, $\cos 45^\circ = \frac{\sqrt{2}}{2}$.
+    \item $60^\circ$: $\sin 60^\circ = \frac{\sqrt{3}}{2}$, $\cos 60^\circ = \frac{1}{2}$.
+\end{itemize}
+\textbf{應用}：直角三角形求解。\\
+\textbf{大學技巧}：單位圓。
+
+\subsection{正弦定理}
+\textbf{公式}：$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$（$R$為外接圓半徑）。\\
+\textbf{應用}：求邊長或角度。\\
+\textbf{大學技巧}：證明用面積與外心。
+
+\subsection{餘弦定理}
+\textbf{公式}：
+\begin{itemize}
+    \item $a^2 = b^2 + c^2 - 2bc \cos A$。
+    \item $b^2 = a^2 + c^2 - 2ac \cos B$。
+    \item $c^2 = a^2 + b^2 - 2ab \cos C$。
+\end{itemize}
+\textbf{應用}：求邊長或角度。\\
+\textbf{大學技巧}：向量內積。
+
+\subsection{面積公式}
+\textbf{公式}：
+\begin{itemize}
+    \item $S = \frac{1}{2}bc \sin A$。
+    \item 海倫公式：$S = \sqrt{s(s-a)(s-b)(s-c)}$，$s = \frac{a+b+c}{2}$。
+\end{itemize}
+\textbf{應用}：面積計算。\\
+\textbf{大學技巧}：用餘弦定理推導。
+
+\subsection{內心與外心}
+\textbf{內心}（內切圓中心）：
+\begin{itemize}
+    \item 內心到三邊距離相等，內切圓半徑$r = \frac{S}{s}$，$S$為面積，$s = \frac{a+b+c}{2}$。
+\end{itemize}
+\textbf{外心}（外接圓中心）：
+\begin{itemize}
+    \item 外心到三頂點距離相等，外接圓半徑$R = \frac{a}{2 \sin A} = \frac{abc}{4S}$。
+\end{itemize}
+\textbf{應用}：幾何性質與證明。\\
+\textbf{大學技巧}：坐標幾何求心。
+
+\section{例題解析}
+
+\subsection{例題1：基本三角比}
+直角三角形，$\angle A=30^\circ$，斜邊10，求對邊。\\
+\textbf{解}：$a = 10 \sin 30^\circ = 5$。
+
+\subsection{例題2：正弦定理}
+$\triangle ABC$，$a=5$，$\angle A=30^\circ$，$\angle B=45^\circ$，求$b$。\\
+\textbf{解}：$\angle C = 105^\circ$，$b = 5 \cdot \frac{\sin 45^\circ}{\sin 30^\circ} = 5\sqrt{2}$。
+
+\subsection{例題3：餘弦定理}
+$\triangle ABC$，$b=3$，$c=4$，$\angle A=60^\circ$，求$a$。\\
+\textbf{解}：$a^2 = 9 + 16 - 24 \cdot \frac{1}{2} = 13$，$a = \sqrt{13}$。
+
+\subsection{例題4：面積與外心}
+$\triangle ABC$，$a=6$，$b=8$，$\angle C=45^\circ$，求面積與$R$。\\
+\textbf{解}：$S = 24 \cdot \frac{\sqrt{2}}{2} = 12\sqrt{2}$，$R = \frac{6}{2 \sin 45^\circ} = 3\sqrt{2}$。
+
+\subsection{例題5：證明題}
+證明餘弦定理（用距離公式）。\\
+\textbf{解}：設$B(0,0)$，$C(b,0)$，$A(c \cos A, c \sin A)$，計算$BA^2 = a^2$，得$a^2 = b^2 + c^2 - 2bc \cos A$。
+
+\section{圖形展示}
+三角形與外心：
+\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (4,0);
+    \coordinate (C) at (2,3);
+    \draw (A) -- (B) -- (C) -- cycle;
+    \node at (-0.3,0) {$A$};
+    \node at (4.3,0) {$B$};
+    \node at (2,3.3) {$C$};
+    \node at (2,1) {$O$ (外心)};
+\end{tikzpicture}
+
+\section{題庫}
+\begin{enumerate}[label=\arabic*.]
+    % 計算題 (10)
+    \item $\angle A=45^\circ$，斜邊8，求對邊。
+    \item $\angle B=60^\circ$，鄰邊5，求斜邊。
+    \item $a=7$，$\angle A=30^\circ$，$\angle B=60^\circ$，求$b$。
+    \item $b=5$，$c=6$，$\angle A=45^\circ$，求$a$。
+    \item $a=4$，$b=5$，$\angle C=60^\circ$，求面積。
+    \item $\angle A=30^\circ$，對邊3，求斜邊。
+    \item $a=8$，$\angle A=45^\circ$，$\angle B=60^\circ$，求$c$。
+    \item $b=3$，$c=4$，$\angle A=90^\circ$，求$a$。
+    \item $a=6$，$b=7$，$\angle C=30^\circ$，求面積。
+    \item $a=5$，$b=6$，$c=7$，求$R$。
+    % 應用題 (20)
+    \item $a=5$，$b=6$，$\angle C=60^\circ$，求$c$。
+    \item 梯靠牆，底距3m，與地$45^\circ$，求梯長。
+    \item $a=10$，$\angle A=30^\circ$，$\angle B=45^\circ$，求面積。
+    \item $b=8$，$c=9$，$\angle A=60^\circ$，求$a$。
+    \item 旗杆影子6m，仰角$60^\circ$，求高。
+    \item $a=4$，$b=5$，$c=6$，求$\angle A$。
+    \item $a=7$，$\angle A=45^\circ$，$\angle B=60^\circ$，求$b$。
+    \item 河寬，AB=10m，$\angle BAC=30^\circ$，求AC。
+    \item $b=3$，$c=4$，$\angle A=45^\circ$，求面積與$r$。
+    \item $a=12$，$\angle A=60^\circ$，$\angle B=45^\circ$，求$c$。
+    \item 建築傾斜，底距5m，頂與地$30^\circ$，求高。
+    \item $a=5$，$b=6$，$c=7$，求面積。
+    \item $b=8$，$c=10$，$\angle A=90^\circ$，求$a$。
+    \item $a=6$，$b=8$，$\angle C=45^\circ$，求$c$。
+    \item 山坡傾角$30^\circ$，斜長10m，求高。
+    \item $a=9$，$\angle A=30^\circ$，$\angle B=60^\circ$，求$b$。
+    \item $b=5$，$c=6$，$\angle A=60^\circ$，求面積。
+    \item 兩點距8m，仰角$45^\circ$，求高。
+    \item $a=4$，$b=5$，$c=6$，求$R$。
+    \item $a=10$，$b=12$，$\angle C=60^\circ$，求面積。
+    % 觀念題 (10)
+    \item 證明正弦定理（用面積）。
+    \item 證明餘弦定理（用畢氏）。
+    \item 證明$S = \frac{1}{2}bc \sin A$。
+    \item 特殊角度$60^\circ$的三角比？
+    \item 證明$R = \frac{a}{2 \sin A}$。
+    \item 餘弦定理如何求角度？
+    \item 證明內切圓半徑$r = \frac{S}{s}$。
+    \item 正弦定理與外心關係？
+    \item 證明海倫公式。
+    \item 餘弦定理與向量關係？
+    % 進階題 (10)
+    \item $a=5$，$b=6$，$c=7$，求$\angle B$。
+    \item $a=8$，$\angle A=30^\circ$，面積12，求$b$。
+    \item $b=4$，$c=5$，$\angle A=60^\circ$，求$a$與$R$。
+    \item $a=6$，$b=7$，$c=8$，求面積與$r$。
+    \item $a=10$，$\angle A=45^\circ$，$\angle B=60^\circ$，求$c$。
+    \item $b=3$，$c=4$，面積5，求$\angle A$。
+    \item $a=5$，$b=6$，$\angle C=90^\circ$，求$c$與$R$。
+    \item $a=9$，$b=12$，$\angle C=60^\circ$，求$c$。
+    \item $a=4$，$b=5$，$c=6$，求外心到A距離。
+    \item $b=7$，$c=8$，$\angle A=45^\circ$，求$a$與面積。
+    % 挑戰題 (10)
+    \item $a=5$，$b=6$，$c=7$，求最大角與$R$。
+    \item 兩岸測距，AB=10m，$\angle BAC=30^\circ$，$\angle ABC=45^\circ$，求AC。
+    \item $a=8$，$b=10$，面積20，求$\angle C$與$r$。
+    \item $b=6$，$c=8$，$\angle A=60^\circ$，求面積與外心到B距離。
+    \item $a=5$，$b=12$，$c=13$，求$\angle A$與內心到A距離。
+    \item $a=7$，$b=8$，$c=9$，求$R$與面積。
+    \item $a=4$，$b=5$，$\angle C=60^\circ$，求$c$與$S$。
+    \item 山坡，斜長12m，仰角$30^\circ$，底角$45^\circ$，求水平距與高。
+    \item $a=10$，$b=11$，$c=12$，求面積與$r$。
+    \item 證明：三角形內心到三邊距離相等。
+\end{enumerate}

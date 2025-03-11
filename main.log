@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.3.9)  10 MAR 2025 21:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.3.9)  11 MAR 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,31 +1006,31 @@ Package fontspec Info: Font family 'ARPLUKaiTW(1)' created for font 'AR PL
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-3.
+4.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1066,7 +1066,7 @@ LaTeX Font Info:    ... okay on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 53.
+Package hyperref Info: Link coloring OFF on input line 54.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1078,9 +1078,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1092,70 +1092,70 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 53.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 53.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 53.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 53.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 53.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 53.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 53.
-LaTeX Font Info:    Redeclaring math accent \check on input line 53.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 53.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 53.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 53.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 53.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 54.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 54.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 54.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 54.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 54.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 54.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 54.
+LaTeX Font Info:    Redeclaring math accent \check on input line 54.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 54.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 54.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 54.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 54.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 53.
+(Font)              `operators' in the math version `normal' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 53.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 54.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 53.
+(Font)              `operators' in the math version `bold' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 53.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 53.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 53.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 53.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 53.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 53.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 53.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 53.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 53.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 53.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 54.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 53.
+ on input line 54.
 
 \c@lstlisting=\count360
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1169,105 +1169,64 @@ LaTeX Font Warning: Font shape `TU/ARPLUKaiTW(1)/b/n' undefined
 
 [1
 
-] [2])
+] [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3] [4
+ [4] [5
 
 ]
 Chapter 1.
-(./src/chapter1.tex [5
+(./src/chapter1.tex [6
 
-] [6] [7] [8] [9]) [10]
+] [7] [8] [9] [10]) [11]
 Chapter 2.
-(./src/chapter2.tex [11
+(./src/chapter2.tex [12
 
-] [12] [13] [14]) [15]
+] [13] [14] [15]) [16]
 Chapter 3.
-(./src/chapter3.tex [16
+(./src/chapter3.tex [17
 
-] [17] [18] [19] [20]) [21]
+] [18] [19] [20] [21]) [22]
 Chapter 4.
-(./src/chapter4.tex [22
+(./src/chapter4.tex [23
 
-] [23] [24] [25]) [26]
+] [24] [25] [26]) [27]
 Chapter 5.
-(./src/chapter5.tex [27
+(./src/chapter5.tex [28
 
-] [28] [29] [30]) [31]
+] [29] [30] [31]) [32]
 Chapter 6.
+(./src/chapter6.tex [33
 
-! LaTeX Error: File `src/chapter6.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-! Interruption.
-<to be read again> 
-                   }
-l.100 \input{src/chapter6.tex}
-                              ^^M
-? 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [32
-
-]
+] [34] [35] [36]) [37]
 Chapter 7.
+(./src/chapter7.tex
+Overfull \hbox (55.95485pt too wide) in paragraph at lines 8--9
+[]\TU/ARPLUKaiTW(1)/m/n/12 圖 表：|  直 方 圖、|  折 線 圖、|  圓 餅 圖、|  莖 葉 圖、|  箱 形 圖  |（
+五 數 概 要：| $\OML/cmm/m/it/12 Q[]; Q[]; Q[]; []; []$\TU/ARPLUKaiTW(1)/m/n/12 ） 。|
+ 
+ []
 
-! LaTeX Error: File `src/chapter6.tex' not found.
+[38
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [33
-
-]
+] [39] [40] [41]) [42]
 Chapter 8.
+(./src/chapter8.tex [43
 
-! LaTeX Error: File `src/chapter7.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [34
-
-]
+] [44] [45] [46]) [47]
 Chapter 9.
+(./src/chapter9.tex [48
 
-! LaTeX Error: File `src/chapter8.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [35
-
-]
+] [49] [50] [51]) [52]
 Chapter 10.
+(./src/chapter10.tex [53
 
-! LaTeX Error: File `src/chapter9.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [36
-
-]
+] [54] [55] [56]) [57]
 Chapter 11.
+(./src/chapter11.tex [58
 
-! LaTeX Error: File `src/chapter11.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [37
-
-]
+] [59] [60] [61]) [62]
 Chapter 12.
 
 ! LaTeX Error: File `src/chapter12.tex' not found.
@@ -1275,4 +1234,67 @@ Chapter 12.
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
-Enter f
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [63
+
+]
+Chapter 13.
+
+! LaTeX Error: File `src/chapter13.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [64
+
+]
+Chapter 14.
+
+! LaTeX Error: File `src/chapter14.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored) [65
+
+]
+Chapter 15.
+(./src/solutions.tex [66
+
+] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76]
+[77] [78] [79] [80]
+Missing character: There is no 略 (U+7565) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 近 (U+8FD1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 似 (U+4F3C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 常 (U+5E38) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 態 (U+614B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+[81] [82] [83] [84] [85] [86] [87] [88]) [89] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 0688182FFDE44A22E66DBF77F9A9ABF5;16668
+(rerunfilecheck)             After:  C793FB1BBC59376CC5E07FE6F3923CFD;18169.
+ ) 
+Here is how much of TeX's memory you used:
+ 51636 strings out of 476191
+ 1344817 string characters out of 5812073
+ 2027367 words of memory out of 5000000
+ 71689 multiletter control sequences out of 15000+600000
+ 477605 words of font info for 83 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 84i,12n,89p,727b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (90 pages).

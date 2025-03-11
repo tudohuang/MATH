@@ -1,0 +1,147 @@
+\section{觀念與公式}
+
+\subsection{基本概念}
+機率衡量事件可能性。\\
+\textbf{定義}：
+\begin{itemize}
+    \item 樣本空間：所有可能結果。
+    \item 事件：樣本空間子集。
+    \item 機率：$P(A) = \frac{\text{有利結果數}}{\text{總結果數}}$（古典機率）。
+\end{itemize}
+\textbf{應用}：簡單計數。\\
+\textbf{大學技巧}：集合論描述。
+
+\subsection{機率的性質與運算}
+\textbf{公式}：
+\begin{itemize}
+    \item 補事件：$P(\overline{A}) = 1 - P(A)$。
+    \item 互斥事件：$P(A \cup B) = P(A) + P(B)$。
+    \item 獨立事件：$P(A \cap B) = P(A) \cdot P(B)$。
+\end{itemize}
+\textbf{應用}：多事件組合。\\
+\textbf{大學技巧}：樹狀圖分析。
+
+\subsection{條件機率}
+定義：$P(A|B) = \frac{P(A \cap B)}{P(B)}$，$P(B) > 0$。\\
+\textbf{性質}：$P(A \cap B) = P(A|B) \cdot P(B)$。\\
+\textbf{應用}：依序事件。\\
+\textbf{大學技巧}：貝氏定理$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$。
+
+\subsection{排列組合與機率}
+用排列組合計算機率。\\
+\textbf{應用}：
+\begin{itemize}
+    \item 樣本空間：$n!$、$P(n,k)$、$\binom{n}{k}$。
+    \item 有利事件：條件計數。
+\end{itemize}
+\textbf{大學技巧}：生成函數。
+
+\subsection{期望值}
+衡量隨機變量的平均結果。\\
+\textbf{公式}：$E(X) = \sum x_i \cdot P(x_i)$，$x_i$為結果，$P(x_i)$為機率。\\
+\textbf{應用}：遊戲收益、試驗平均值。\\
+\textbf{大學技巧}：二項分佈期望值$E(X) = np$。
+
+\section{例題解析}
+
+\subsection{例題1：基本機率}
+一袋有3紅4藍球，隨機抽1球，求紅球機率。\\
+\textbf{解}：$P(\text{紅}) = \frac{3}{7}$。
+
+\subsection{例題2：互斥事件}
+擲骰子，求點數為奇數或6的機率。\\
+\textbf{解}：$P(\text{奇}) = \frac{3}{6}$，$P(6) = \frac{1}{6}$，$P(\text{奇或6}) = \frac{3}{6} + \frac{1}{6} = \frac{2}{3}$。
+
+\subsection{例題3：條件機率}
+袋有5紅3藍，抽2次（放回），求第2紅且第1藍機率。\\
+\textbf{解}：$P(\text{第1藍}) = \frac{3}{8}$，$P(\text{第2紅}) = \frac{5}{8}$，$P = \frac{15}{64}$。
+
+\subsection{例題4：排列組合應用}
+5人選3人排隊，A在B前機率。\\
+\textbf{解}：總數$P(5,3) = 60$，A在B前$24$，$P = \frac{2}{5}$。
+
+\subsection{例題5：期望值}
+擲骰子，贏點數美元，求期望收益。\\
+\textbf{解}：$E(X) = 1 \cdot \frac{1}{6} + 2 \cdot \frac{1}{6} + 3 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 5 \cdot \frac{1}{6} + 6 \cdot \frac{1}{6} = \frac{21}{6} = 3.5$美元。
+
+\section{圖形展示}
+樹狀圖（例題3）：
+\begin{tikzpicture}
+    \node (A) at (0,0) {開始};
+    \node (B) at (2,1) {藍 $\frac{3}{8}$};
+    \node (C) at (2,-1) {紅 $\frac{5}{8}$};
+    \node (D) at (4,2) {藍 $\frac{3}{8}$};
+    \node (E) at (4,0) {紅 $\frac{5}{8}$};
+    \draw (A) -- (B) -- (D);
+    \draw (A) -- (B) -- (E);
+    \draw (A) -- (C);
+\end{tikzpicture}
+
+\section{題庫}
+\begin{enumerate}[label=\arabic*.]
+    % 計算題 (10)
+    \item 擲骰子，求點數4機率。
+    \item 袋3紅2藍，求紅機率。
+    \item 擲2骰子，求和7機率。
+    \item 抽撲克，求紅心機率。
+    \item 擲2幣，求至少1正機率。
+    \item 袋4白3黑，求白機率。
+    \item 擲骰子，求點數<4機率。
+    \item 抽2牌（放回），求皆黑機率。
+    \item 擲骰子，求期望點數。
+    \item 袋5球3紅，求非紅機率。
+    % 應用題 (20)
+    \item 袋3紅4藍，抽2次（放回），求皆紅機率。
+    \item 5人排隊，A, B相鄰機率。
+    \item 擲2骰子，求和偶數機率。
+    \item 袋5紅3藍，抽2次（不放回），求第2紅且第1藍機率。
+    \item 抽撲克，求第1A且第2K機率（不放回）。
+    \item 6人圍圓桌，A, B不相鄰機率。
+    \item 袋4白6黑，抽2次（不放回），求皆白機率。
+    \item 擲3幣，求恰2正機率。
+    \item 遊戲：贏5元（$\frac{1}{3}$），輸2元（$\frac{2}{3}$），求期望收益。
+    \item 袋3紅2藍1綠，抽2次（放回），求不同色機率。
+    \item 擲骰子2次，求第2>第1機率。
+    \item 5張牌選2張，求皆紅心機率。
+    \item 袋6球4紅，抽2次（不放回），求至少1紅機率。
+    \item 4男3女選2人，至少1女機率。
+    \item 擲骰子，點數奇數得3元，偶數失2元，求期望收益。
+    \item 袋5白3黑，抽2次（不放回），求第2白|第1黑機率。
+    \item 6人排隊，A在B前機率。
+    \item 抽3牌（放回），求至少1黑機率。
+    \item 袋4紅3藍，抽2次（放回），求恰1紅期望次數。
+    \item 擲2骰子，求和>10機率。
+    % 觀念題 (10)
+    \item 何謂樣本空間？
+    \item 互斥事件機率如何算？
+    \item 獨立事件定義？
+    \item 條件機率公式？
+    \item 補事件意義？
+    \item 古典與實驗機率差異？
+    \item 如何用排列計算機率？
+    \item 何謂期望值？
+    \item 機率值範圍？
+    \item 樹狀圖如何幫機率計算？
+    % 進階題 (10)
+    \item 袋3紅4藍，抽2次（不放回），求第2紅|第1紅機率。
+    \item 擲2骰子，求和8|第1為4機率。
+    \item 5人排隊，A, B, C順序機率。
+    \item 袋5白3黑，抽3次（放回），求恰2白機率。
+    \item 抽撲克，求第2紅|第1黑機率（不放回）。
+    \item 擲3幣，求期望正面次數。
+    \item 袋4紅3藍，抽2次（不放回），求不同色機率。
+    \item 從7人選4人，A, B必選機率。
+    \item 擲2骰子，求和<6|差<3機率。
+    \item 袋5球3紅，抽2次（放回），求紅次數期望值。
+    % 挑戰題 (10)
+    \item 袋3紅2藍，抽3次（不放回），求至少2紅機率。
+    \item 5人排隊，A, B相鄰且C在D前機率。
+    \item 擲2骰子，求和9|至少1個5機率。
+    \item 袋4白5黑，抽3次（放回），求至少2白機率。
+    \item 遊戲：贏10元（$\frac{1}{4}$），贏5元（$\frac{1}{2}$），輸3元（$\frac{1}{4}$），求期望收益。
+    \item 抽撲克3次（不放回），求恰1A機率。
+    \item 從8人選3人，至少2男（5男3女）機率。
+    \item 擲3骰子，求和10機率。
+    \item 袋3紅4藍，抽2次（不放回），求第2紅|第1藍機率。
+    \item 擲2骰子，求和期望值。
+\end{enumerate}
